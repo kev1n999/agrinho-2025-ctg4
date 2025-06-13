@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Campo Inteligente: A tecnologia que impulsiona o campo</h1>
+    <header id="home">
+        <h1>Campo e cidade: Unidos pela Tecnologia</h1>
 
         <nav>
             <ul>
@@ -29,22 +29,32 @@
         </nav>
     </header>
 
+    <section id="about">
+        <h2>Sobre a tecnologia no campo</h2>
+        <p>
+            A tecnologia tem revolucionado a maneira como o campo e a cidade se conectam. No meio rural, inovações como sensores de solo, drones, irrigação inteligente e monitoramento remoto tornam a produção mais eficiente, sustentável e de alta qualidade. Essas soluções não só ajudam o produtor a cuidar melhor da terra, mas também garantem alimentos de qualidade que chegam até a cidade. A transformação digital no campo fortalece a economia, gera empregos e aproxima o campo da vida urbana, criando uma conexão que beneficia toda a sociedade.
+        </p>
+    </section>
     <!--Cards para exibir informações sobre o solo.-->
     <main>
-        <section class="section-cards">
-            <div class="card">
-                <h3>Temperatura</h3>
-                <p class="orange-status">32°C</p>
-            </div>
+        <section class="section-cards" #id="monitoring">
+            <h2>Monitoramento do solo</h2>
 
-            <div class="card">
-                <h3>Umidade do solo</h3>
-                <p class="green-status">67%</p>
-            </div>
-
-            <div class=card>
-                <h3>pH do Solo</h3>
-                <p class="blue-status">7.2</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Temperatura</h3>
+                    <p class="orange-status">32°C</p>
+                </div>
+    
+                <div class="card">
+                    <h3>Umidade do solo</h3>
+                    <p class="green-status">67%</p>
+                </div>
+    
+                <div class="card">
+                    <h3>pH do Solo</h3>
+                    <p class="blue-status">7.2</p>
+                </div>
             </div>
         </section>
     </main>
@@ -54,4 +64,3 @@
     </footer>
 </body>
 </html>
-

@@ -47,10 +47,35 @@ a:hover {
 }
 
 .section-cards {
-    height: 100vh;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    padding: 20px;
+
+    transition: transform 0.4s ease;
+}
+
+.section-cards h2 {
+    padding: 20px;
+}
+
+.section-cards:hover {
+    transform: scale(1.01);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -61,7 +86,9 @@ a:hover {
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow;
+
+
 }
 
 .card h3 {
@@ -72,6 +99,7 @@ a:hover {
 .card:hover {
     transform: scale(1.01);
     background-color: #388e3c;
+    box-shadow: 0 8px 15px rgba(36, 173, 23, 0.8); 
 }
 
 .orange-status {
@@ -86,9 +114,33 @@ a:hover {
     color: blue
 }
 
+#about {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    padding: 20px;
+
+    transition: transform 0.4s ease;
+}
+
+#about h2 {
+    margin: 20px;
+    text-align: center;
+}
+
+#about:hover {
+    transform: scale(1.01);
+}
+
 footer {
-    background-color: #2e7d32;
     text-align: center;
     padding: 15px 0;
-    color: white;
+    color: rgb(73, 72, 72);
 }
+

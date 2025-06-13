@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,13 +11,39 @@ body {
 header {
     background-color: #2e7d32;
     text-align: center;
-    height: 13vh;
+    height: 18vh;
 }
 
 header h1 {
-    font-family: "Poppins", sans-serif;
     color: #ffffff;
     padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+    color: rgb(58, 207, 58)
 }
 
 .section-cards {
@@ -40,12 +67,23 @@ header h1 {
 .card h3 {
     padding: 10px;
     color: white;
-    font-family: "Poppins", sans-serif;
 }
 
 .card:hover {
     transform: scale(1.01);
     background-color: #388e3c;
+}
+
+.orange-status {
+    color: rgb(204, 120, 23)
+}
+
+.green-status {
+    color: green
+}
+
+.blue-status {
+    color: blue
 }
 
 footer {

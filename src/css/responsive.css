@@ -1,0 +1,138 @@
+@media (max-width: 1200px) {
+    .cards {
+        gap: 16px;
+    }
+
+    .card {
+        width: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .section-cards h2 {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .sys-control {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .sys-control {
+        gap: 10px;
+    }
+
+    .form-section {
+        margin: 10px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .sys-control button {
+        width: 100%;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}

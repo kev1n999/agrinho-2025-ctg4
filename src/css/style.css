@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f5f9f5;
+    background: linear-gradient(135deg, #f5f9f5 0%, #e8f5e9 25%, #c8e6c9 50%, #e8f5e9 75%, #f5f9f5 100%);
 }
 
 @keyframes fadeIn {
@@ -80,6 +80,7 @@ header a:hover {
 }
 
 .section-cards h2 {
+    color: green;
     padding: 20px;
 }
 
@@ -100,8 +101,8 @@ header a:hover {
     width: 280px;
     border-radius: 15px;
     text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow;
+    cursor: default;
+    transition: transform 0.2s ease, box-shadow;
     margin: 15px;
     animation: fadeIn 0.6s ease-out 0.4s backwards;
 }
@@ -156,6 +157,10 @@ header a:hover {
     margin: 20px;
     text-align: center;
     line-height: 1.1;
+}
+
+#about h2 {
+    color: green;
 }
 
 #about:hover {
@@ -267,9 +272,69 @@ label {
     padding: 10px;
 }
 
+.form-section h2 {
+    color: green;
+}
+
 textarea {
     height: 120px;
     width: 480px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    padding: 20px;
+
+    background-image: url("../img/campo.jpg");
+}
+
+.boxes {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f9f5 0%, #e8f5e9 25%, #c8e6c9 50%, #e8f5e9 75%, #f5f9f5 100%);
+    border-radius: 14px;
+
+    font-size: larger;
+    color: green;
+
+    transition: transform 0.3s ease;
+}
+
+.boxes:hover {
+    transform: scale(1.01);
+    cursor: default;
+}
+
+.box {
+    padding: 20px;
+}
+
+.drone {
+    display: flex;
+    justify-content: center;
+}
+
+#drone-img {
+    width: 250px;
+    border-radius: 8px;
 }
 
 footer {
@@ -277,4 +342,10 @@ footer {
     padding: 15px 0;
     color: rgb(73, 72, 72);
     animation: fadeIn 0.6s ease-out 0.6s backwards;
+    background-color: #c8e6c9;
+    font-size: small;
+}
+
+footer img {
+    height: 25px;
 }

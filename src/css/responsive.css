@@ -1,10 +1,18 @@
 @media (max-width: 1200px) {
     .cards {
         gap: 16px;
+        justify-content: center;
     }
 
     .card {
-        width: 260px;
+        width: 280px;
+        margin: 10px;
+    }
+
+    .container {
+        padding: 0 20px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
@@ -23,6 +31,21 @@
 
     textarea {
         width: 100%;
+        max-width: 600px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form-section {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 }
 
@@ -31,46 +54,65 @@
         flex-direction: column;
         gap: 10px;
         padding: 10px 0;
+        align-items: center;
     }
 
     header {
         height: auto;
-        padding: 10px;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
     }
 
     header h1 {
         font-size: 22px;
         padding-top: 10px;
+        margin-bottom: 10px;
     }
 
     .section-cards h2 {
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .cards {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .card {
         width: 90%;
+        max-width: 400px;
+    }
+
+    .form-section {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .sys-control {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     button {
-        width: 90%;
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
     }
 
     textarea {
         width: 100%;
-    }
-
-    .form-section {
-        padding: 10px;
+        max-width: 500px;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 }
 
@@ -81,23 +123,39 @@
 
     nav ul li a {
         font-size: 16px;
-        padding: 6px 12px;
+        padding: 8px 16px;
+        display: block;
+        text-align: center;
     }
 
     .card {
         width: 95%;
-    }
-
-    .sys-control {
-        gap: 10px;
+        padding: 15px;
     }
 
     .form-section {
-        margin: 10px;
+        margin: 10px auto;
+        padding: 15px;
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .sys-control {
+        width: 100%;
+        max-width: 100%;
     }
 
     textarea {
-        height: 100px;
+        height: 120px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -108,31 +166,91 @@
 
     nav ul li a {
         font-size: 14px;
+        padding: 6px 12px;
     }
 
     h2 {
         font-size: 20px;
+        margin: 15px 0;
     }
 
     p {
         font-size: 15px;
+        line-height: 1.4;
     }
 
     .card {
         width: 95%;
         height: auto;
-        padding: 20px;
+        padding: 15px;
+        margin: 10px 0;
     }
 
     .card h3 {
         font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .form-section {
+        margin: 10px auto;
+        padding: 15px;
+        width: 95%;
+    }
+
+    .sys-control {
+        width: 100%;
     }
 
     .sys-control button {
         width: 100%;
+        margin: 5px 0;
     }
 
     textarea {
         height: 100px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .form-section {
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    textarea {
+        padding: 8px;
     }
 }

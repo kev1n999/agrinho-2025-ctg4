@@ -75,6 +75,7 @@ a:hover {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -87,12 +88,11 @@ a:hover {
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow;
-
-
+    margin: 15px;
 }
 
 .card h3 {
-    padding: 10px;
+    padding: 15px;
     color: white;
 }
 
@@ -103,15 +103,18 @@ a:hover {
 }
 
 .orange-status {
-    color: rgb(204, 120, 23)
+    color: rgb(204, 120, 23);
+    font-weight: bold;
 }
 
 .green-status {
-    color: green
+    color: green;
+    font-weight: bold;
 }
 
 .blue-status {
-    color: blue
+    color: blue;
+    font-weight: bold;
 }
 
 #about {
@@ -138,9 +141,12 @@ a:hover {
     transform: scale(1.01);
 }
 
+.monitoring-description {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 15px 0;
     color: rgb(73, 72, 72);
 }
-

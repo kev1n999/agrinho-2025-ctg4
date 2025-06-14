@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="home">
-        <h1>Campo e cidade: Unidos pela Tecnologia</h1>
+        <h1>A tecnologia que impulsiona o campo e cidade.</h1>
 
         <nav>
             <ul>
@@ -51,23 +51,27 @@
                     <p class="orange-status">32°C</p>
                     
                     <div class="card-footer">
-                        <span>↑ 2°C</span>
-                        <span>Atualizado agora</span>
+                        <span class="stt-green">↑ 2°C</span>
+                        <span class="updated-now">Atualizado agora</span>
                     </div>
                 </div>
     
                 <div class="card">
                     <h3>Umidade do solo</h3>
                     <p class="green-status">67%</p>
-                    <span>↓ 3%</span>
-                    <span>Atualizado agora</span>
+                    <div class="card-footer">
+                        <span class="stt-red">↓ 3%</span>
+                        <span class="updated-now">Atualizado agora</span>
+                    </div>
                 </div>
     
                 <div class="card">
                     <h3>pH do Solo</h3>
                     <p class="blue-status">7.2</p>
-                    <span>→ Estável</span>
-                    <span>Atualizado agora</span>
+                    <div class="card-footer">
+                        <span class="stt-yellow">→ Estável</span>
+                        <span class="updated-now">Atualizado agora</span>
+                    </div>
                 </div>
             </div>
 
@@ -79,6 +83,42 @@
         </section>
     </main>
 
+    <section class="form-section">
+        <h2>Compartilhe suas ideias conosco</h2>
+        <p class="form-description">Tem uma ideia ou sugestão e deseja compartilhar? Preencha o formulário abaixo!</p>
+
+        <form>
+            <div class="form-label">
+                <label for="name">Nome</label>
+                <input type="text" required placeholder="Seu nome completo">
+            </div>
+
+            <div class="form-label">
+                <label for="email">Email</label>
+                <input type="email" required placeholder="Seu email">
+            </div>
+
+            <div class="form-label">
+                <label for="submit">Assunto</label>
+                <select name="" id="submit" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="sugestion">Sugerir uma nova Tecnologia</option>
+                    <option value="idea">Nova Ideia</option>
+                    <option value="opinion">Compartilhar opinião</option>
+                    <option value="other">Outro</option>
+                </select>
+
+                <div class="form-label">
+                    <label for="message">Mensagem</label>
+                    <textarea name="" id="message" placeholder="Digite a sua mensagem aqui..."></textarea>
+                </div>
+
+                <div class="form-btn">
+                    <button>Enviar Mensagem</button>
+                </div>
+            </div>
+        </form>
+    </section>
     <footer>
         <p>Agrinho 2025 - Festejando a conexão campo-cidade</p>
     </footer>

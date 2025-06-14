@@ -132,6 +132,11 @@ a:hover {
     font-weight: bold;
 }
 
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
 #about {
     margin: 20px;
     display: flex;
@@ -161,6 +166,26 @@ a:hover {
     animation: fadeIn 0.6s ease-out 0.3s backwards;
 }
 
+.stt-green {
+    color: rgb(87, 235, 87);
+    font-size: larger;
+}
+
+.stt-yellow {
+    color: yellow;
+    font-size: larger;
+}
+
+.stt-red {
+    color: red;
+    font-size: larger;
+}
+
+.updated-now {
+    color: rgb(156, 223, 178);
+    font-size: larger;
+}
+
 .sys-control {
     display: flex;
     gap: 20px;
@@ -183,6 +208,63 @@ button:hover {
     transform: scale(1.01);
     background-color: #388e3c;
     box-shadow: 0 4px 8px rgba(36, 173, 23, 0.8); 
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-section {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    padding: 20px;
+}
+
+.form-label,
+.form-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-section button {
+    margin: 10px;
+    width: 150px;
+}
+
+label {
+    margin: 10px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    outline: none;
+    padding: 12px;
+    border: 2px solid rgb(50, 131, 25);
+    border-radius: 8px;
+}
+
+.form-description,
+.form-section h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+textarea {
+    height: 120px;
+    width: 480px;
 }
 
 footer {

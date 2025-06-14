@@ -8,15 +8,28 @@ body {
     background-color: #f5f9f5;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 header {
     background-color: #2e7d32;
     text-align: center;
     height: 18vh;
+    animation: fadeIn 0.6s ease-out;
 }
 
 header h1 {
     color: #ffffff;
     padding-top: 20px;
+    animation: fadeIn 0.6s ease-out 0.1s backwards;
 }
 
 nav ul {
@@ -25,6 +38,7 @@ nav ul {
     align-items: center;
     gap: 40px;
     padding: 20px 0;
+    animation: fadeIn 0.6s ease-out 0.2s backwards;
 }
 
 li {
@@ -89,6 +103,7 @@ a:hover {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow;
     margin: 15px;
+    animation: fadeIn 0.6s ease-out 0.4s backwards;
 }
 
 .card h3 {
@@ -143,10 +158,36 @@ a:hover {
 
 .monitoring-description {
     text-align: center;
+    animation: fadeIn 0.6s ease-out 0.3s backwards;
+}
+
+.sys-control {
+    display: flex;
+    gap: 20px;
+    animation: fadeIn 0.6s ease-out 0.5s backwards;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    height: 45px;
+    width: 120px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.01);
+    background-color: #388e3c;
+    box-shadow: 0 4px 8px rgba(36, 173, 23, 0.8); 
 }
 
 footer {
     text-align: center;
     padding: 15px 0;
     color: rgb(73, 72, 72);
+    animation: fadeIn 0.6s ease-out 0.6s backwards;
 }

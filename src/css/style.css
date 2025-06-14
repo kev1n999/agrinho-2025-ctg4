@@ -45,7 +45,7 @@ li {
     list-style-type: none;
 }
 
-a {
+header a {
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -54,7 +54,7 @@ a {
     transition: all 0.3s ease;
 }
 
-a:hover {
+header a:hover {
     background-color: #1b5e20;
     transform: translateY(-2px);
     color: rgb(58, 207, 58)
@@ -152,9 +152,10 @@ a:hover {
     transition: transform 0.4s ease;
 }
 
-#about h2 {
+#about h2, p {
     margin: 20px;
     text-align: center;
+    line-height: 1.1;
 }
 
 #about:hover {
@@ -229,6 +230,10 @@ form {
     -webkit-backdrop-filter: blur(8px);
     box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
     padding: 20px;
+}
+
+.form-section::before {
+    filter: blur(4px);
 }
 
 .form-label,

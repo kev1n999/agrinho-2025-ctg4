@@ -326,6 +326,11 @@ select {
     padding: 20px;
 }
 
+.box .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 .drone {
     display: flex;
     justify-content: center;

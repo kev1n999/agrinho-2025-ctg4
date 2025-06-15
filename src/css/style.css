@@ -241,8 +241,7 @@ form {
     filter: blur(4px);
 }
 
-.form-label,
-.form-btn {
+.form-label {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -335,6 +334,58 @@ select {
 #drone-img {
     width: 250px;
     border-radius: 8px;
+}
+
+.news {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(26, 25, 25, 0.05); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    padding: 20px;
+}
+
+.news h2 {
+    color: green;
+    text-align: center;
+}
+
+.news .preview {
+    margin: 0;
+    padding: 15px;
+}
+
+.news .new-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.new {
+    background: rgba(100, 97, 97, 0.05); 
+    margin: 20px;
+    box-shadow: 0 4px 30px rgba(36, 173, 23, 0.4); 
+    border-radius: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.new img {
+    height: 250px;
+    width: 400px; 
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.new:hover {
+    transform: scale(1.01);
 }
 
 footer {

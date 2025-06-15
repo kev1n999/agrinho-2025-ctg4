@@ -14,6 +14,17 @@
         max-width: 100%;
         overflow-x: hidden;
     }
+
+    .news {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .new img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
 }
 
 @media (max-width: 992px) {
@@ -113,6 +124,26 @@
         max-width: 500px;
         box-sizing: border-box;
         margin: 0 auto;
+    }
+
+    .news {
+        padding: 15px;
+    }
+
+    .new {
+        margin: 15px 0;
+    }
+
+    .new img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .news .new-description {
+        font-size: 16px;
+        padding: 0 10px;
     }
 }
 
@@ -215,6 +246,28 @@
 
     .container {
         padding: 0 10px;
+    }
+
+    .news {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .new {
+        margin: 10px 0;
+    }
+
+    .new img {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .news .new-description {
+        font-size: 14px;
+    }
+
+    .news h2 {
+        font-size: 20px;
     }
 }
 

@@ -146,6 +146,11 @@
         font-size: 16px;
         padding: 0 10px;
     }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {
@@ -189,6 +194,11 @@
         width: 100%;
         max-width: 100%;
         white-space: nowrap;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -277,6 +287,11 @@
         padding: 8px 16px;
         white-space: nowrap;
     }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 320px) {
@@ -304,6 +319,11 @@
     button {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
     }
 
     .form-section {

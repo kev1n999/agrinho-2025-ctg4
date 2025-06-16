@@ -224,6 +224,7 @@ header a:hover {
 
 .sys-control {
     display: flex;
+    gap: 20px;
 }
 
 button {

@@ -307,3 +307,29 @@
         padding: 8px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #f5f9f5 0%, #e8f5e9 25%, #c8e6c9 50%, #e8f5e9 75%, #f5f9f5 100%);
+    }
+
+    .container-form {
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .register-form {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

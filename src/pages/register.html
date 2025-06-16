@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
-    <div class="register-form">
-        <form action="">
-            
+    <div class="container-form">
+        <form action="" class="register-form">
+            <h2 style="text-align: center; color: rgb(17, 216, 17)">Cadastro de Propriedade Rural</h2>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="">Nome da propriedade</label>
+                    <input type="text" required>
+                </div>
+    
+                <div class="form-label">
+                    <label for="">Área Total(ha)</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="">Cidade</label>
+                    <input type="text" required>
+                </div>
+    
+                <div class="form-label">
+                    <label for="">Estado</label>
+                    <select name="" id="">
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="">CEP</label>
+                    <input type="text" required>
+                </div>
+    
+                <div class="form-label">
+                    <label for="">Cordenadas Geográficas</label>
+                    <input type="text" required>
+                </div>  
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="">Atividade Principal</label>
+                    <textarea name="" id="" placeholder="Descreva as principais atividades desenvolvidas na propriedade (ex: pecuária, agricultura de soja, reflorestamento, etc.)"></textarea>
+                </div>
+    
+                <div class="form-label">
+                    <label for="">Nome do responsável</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="">Email do responsável</label>
+                    <input type="text" required>
+                </div>
+    
+                <div class="form-label">
+                    <label for="">Telefone do responsável</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="form-areas">
+                <div class="form-label">
+                    <label for="">Observações Adicionais</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+    
+                <div class="form-label">
+                    <label for="area-documents">Anexar Documentos/Imagens:</label>
+                    <div class="add-documents" id="drop">
+                        <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" style="display: none;">
+                        <div class="upload-content">
+                            <p style="color: rgb(0, 132, 255);">Arraste arquivos aqui ou clique para selecionar</p>
+                            <p class="types">Formatos aceitos: PDF, DOC, DOCX, JPG, PNG</p>
+                        </div>
+                        <div id="fileList" class="file-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="cancel-button">Cancelar</button>
+                <button id="register-button">Cadastrar Propriedade</button>
+            </div>
         </form>
     </div>
 </body>

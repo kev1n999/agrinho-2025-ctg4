@@ -330,6 +330,10 @@ select {
     padding: 20px;
 
     background-image: url("../img/campo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
 }
 
 .boxes {

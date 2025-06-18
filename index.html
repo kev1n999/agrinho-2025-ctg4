@@ -7,7 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
     <div class="sun-animation">
         <div class="sun"></div>
@@ -19,19 +25,19 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#home">Início</a>
+                        <a href="#home"><i class="fas fa-home"></i> Início</a>
                     </li>
                     <li>
-                        <a href="#about">Sobre</a>
+                        <a href="#about"><i class="fas fa-info-circle"></i> Sobre</a>
                     </li>
                     <li>
-                        <a href="#monitoring">Monitoramento</a>
+                        <a href="#monitoring"><i class="fas fa-chart-bar"></i> Monitoramento</a>
                     </li>
                     <li>
-                        <a href="#soluctions">Soluções</a>
+                        <a href="#soluctions"><i class="fas fa-lightbulb"></i> Soluções</a>
                     </li>
                     <li>
-                        <a href="#form">Fale conosco</a>
+                        <a href="#form"><i class="fas fa-envelope"></i> Fale conosco</a>
                     </li>
                 </ul>
             </nav>
@@ -39,14 +45,17 @@
 
         <main>
             <section id="about">
-                <h2>Sobre a tecnologia no campo</h2>
+                <h2><i class="fas fa-seedling"></i> Sobre a tecnologia no campo</h2>
                 <p>
                     A tecnologia tem revolucionado a maneira como o campo e a cidade se conectam. No meio rural, inovações como sensores de solo, drones, irrigação inteligente e monitoramento remoto tornam a produção mais eficiente, sustentável e de alta qualidade. Essas soluções não só ajudam o produtor a cuidar melhor da terra, mas também garantem alimentos de qualidade que chegam até a cidade. A transformação digital no campo fortalece a economia, gera empregos e aproxima o campo da vida urbana, criando uma conexão que beneficia toda a sociedade.
                 </p>
             </section>
+
+            <div class="home-sun"></div>
+
             <!--Cards para exibir informações sobre o solo. (É apenas para simular, já que o projeto é baseado apenas em HTML e CSS, então não terá nenhuma funcionalidade útil)-->
             <section class="section-cards" id="monitoring">
-                <h2>Monitoramento do solo</h2>
+                <h2><i class="fas fa-thermometer-half"></i> Monitoramento do solo</h2>
                 <p class="monitoring-description">
                     Acompanhe em tempo real as condições do solo através de sensores inteligentes. 
                     Dados precisos de temperatura, umidade e pH ajudam a otimizar o cultivo e 
@@ -55,7 +64,7 @@
 
                 <div class="cards">
                     <div class="card">
-                        <h3>Temperatura</h3>
+                        <h3><i class="fas fa-temperature-high"></i> Temperatura</h3>
                         <p class="orange-status">32°C</p>
                         
                         <div class="card-footer">
@@ -65,7 +74,7 @@
                     </div>
         
                     <div class="card">
-                        <h3>Umidade do solo</h3>
+                        <h3><i class="fas fa-tint"></i> Umidade do solo</h3>
                         <p class="green-status">67%</p>
                         <div class="card-footer">
                             <span class="stt-red">↓ 3%</span>
@@ -74,7 +83,7 @@
                     </div>
         
                     <div class="card">
-                        <h3>pH do Solo</h3>
+                        <h3><i class="fas fa-flask"></i> pH do Solo</h3>
                         <p class="blue-status">7.2</p>
                         <div class="card-footer">
                             <span class="stt-yellow">→ Estável</span>
@@ -84,14 +93,8 @@
                 </div>
 
                 <div class="sys-control">
-                   <a href="#">
-                        <button>Atualizar dados</button>
-                   </a> 
                     <a href="./src/pages/report.html">
                         <button id="btn-generator">Gerar relatório</button>
-                    </a>
-                    <a href="#">
-                        <button>Configurações</button>
                     </a>
                 </div>
             </section>
@@ -99,7 +102,7 @@
             <section class="container-box" id="soluctions">
                 <div class="boxes">
                     <div class="box">
-                        <h2>Conheça nossas soluções para o seu cultivo!</h2>
+                        <h2><i class="fas fa-cogs"></i> Conheça nossas soluções para o seu cultivo!</h2>
                         <div class="drone">
                             <img src="./src/img/drone_img.webp" alt="" id="drone-img">
                         </div>
@@ -109,8 +112,12 @@
                         </p>
 
                         <div class="buttons">
-                            <button>Saiba mais</button>
-                            <a href="./src/pages/register.html"><button>Cadastre sua Produção</button></a>
+                            <a href="./src/pages/register.html">
+                                <button>Saiba mais</button>
+                            </a>
+                            <a href="./src/pages/register.html">
+                                <button>Cadastre sua Produção</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -118,22 +125,22 @@
         </main>
 
         <section id="form" class="form-section">
-            <h2>Compartilhe suas ideias conosco</h2>
+            <h2><i class="fas fa-comment-dots"></i> Compartilhe suas ideias conosco</h2>
             <p class="form-description">Tem uma ideia ou sugestão e deseja compartilhar? Preencha o formulário abaixo!</p>
 
             <form>
                 <div class="form-label">
-                    <label for="name">Nome</label>
+                    <label for="name"><i class="fas fa-user"></i> Nome</label>
                     <input type="text" required placeholder="Seu nome completo">
                 </div>
 
                 <div class="form-label">
-                    <label for="email">Email</label>
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
                     <input type="email" required placeholder="Seu email">
                 </div>
 
                 <div class="form-label">
-                    <label for="submit">Assunto</label>
+                    <label for="submit"><i class="fas fa-tag"></i> Assunto</label>
                     <select name="" id="submit" required>
                         <option value="">Selecione uma opção</option>
                         <option value="sugestion">Sugerir uma nova Tecnologia</option>
@@ -141,26 +148,26 @@
                         <option value="opinion">Compartilhar opinião</option>
                         <option value="other">Outro</option>
                     </select>
+                </div>
 
                 <div class="form-label">
-                    <label for="message">Mensagem</label>
+                    <label for="message"><i class="fas fa-comment"></i> Mensagem</label>
                     <textarea name="" id="message" placeholder="Digite a sua mensagem aqui..."></textarea>
                 </div>
 
-                    <div class="form-btn">
-                        <button>Enviar Mensagem</button>
-                    </div>
+                <div class="form-btn">
+                    <button><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
                 </div>
             </form>
         </section>
         
         <footer>
             <p>
-                Essa página foi desenvolvida para o concurso do Agrinho - 2025, que aborda o tema "Festejando a conexão campo cidade".
+                <i class="fas fa-award"></i> Essa página foi desenvolvida para o concurso do Agrinho - 2025, que aborda o tema "Festejando a conexão campo cidade".
                 <br>
                 Veja o repositório no GitHub em: <a href="https://github.com/kev1n999/agrinho-2025-ctg4">Clique para ver o repositório</a>
             </p>
-            <p>Agrinho 2025 - Festejando a conexão campo-cidade</p>
+            <p><i class="fas fa-tractor"></i> Agrinho 2025 - Festejando a conexão campo-cidade</p>
 
             <a href="https://github.com/kev1n999">
                 <img src="./src/img/github-mark.png" alt="Acesse meu GitHub">

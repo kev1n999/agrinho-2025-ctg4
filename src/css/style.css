@@ -193,6 +193,24 @@ header a:hover {
     transform: scale(1.01);
 }
 
+.home-sun {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+    background: yellow;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 100;
+    box-shadow: 0 0 20px yellow;
+    transition: transform 0.3s ease;
+}
+
+.home-sun:hover {
+    transform: scale(1.01);
+}
+
 .monitoring-description {
     text-align: center;
 }
@@ -220,6 +238,18 @@ header a:hover {
 .sys-control {
     display: flex;
     gap: 20px;
+}
+
+.sys-control button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    height: 55px;
+    width: 140px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 button {

@@ -106,7 +106,6 @@
         width: 100%;
         max-width: 300px;
         margin: 5px 0;
-        white-space: nowrap;
     }
 
     textarea {
@@ -159,10 +158,8 @@
     }
 
     button {
-        padding: 10px;
         width: 100%;
         max-width: 100%;
-        white-space: nowrap;
     }
 
     .buttons {
@@ -216,6 +213,7 @@
     .sys-control button {
         width: 100%;
         margin: 5px 0;
+        width: 150px;
     }
 
     textarea {
@@ -231,8 +229,7 @@
 
     button {
         font-size: 14px;
-        padding: 8px 16px;
-        white-space: nowrap;
+
     }
 
     .buttons {

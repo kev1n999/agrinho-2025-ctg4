@@ -132,6 +132,16 @@ li {
     border-radius: 8px;
 }
 
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    height: 25px;
+    width: 25px;
+}
+
 @media (max-height: 768px) {
     .container {
         height: 300px;

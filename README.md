@@ -17,10 +17,11 @@ Este projeto foi desenvolvido para o concurso Agrinho 2025, com o tema "Festejan
 
 - ✅ Monitoramento em tempo real de dados do solo
 - ✅ Página responsiva(Flexbox)
-- ✅ Visualização de temperatura, umidade e pH do solo
+- ✅ Visualização de temperatura, umidade, pH do solo e geração de relatórios
 - ✅ Formulário para envio de ideias e sugestões(entre outros)
 - ✅ Navegação clara entre seções
 - ✅ Sessão para oferta de serviços e soluções tecnológicas para o campo
+- ✅ Formulário para cadastro de Propriedade Rural
   
 ## 🔗 Deploy
 

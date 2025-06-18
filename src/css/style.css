@@ -196,7 +196,7 @@ header a:hover {
 .home-sun {
     position: fixed;
     top: 50%;
-    left: 30px;
+    right: 30px;
     width: 70px;
     height: 70px;
     background: yellow;

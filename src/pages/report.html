@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório do Monitoramento do solo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+    <h1>Relatório Gerado</h1>
+
+    <div class="container">
+        <div class="report">
+            <div class="img">
+                <img src="../img/monitoramento.png" alt="">
+            </div>
+    
+            <h2>Análise do solo</h2>
+    
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-temperature-half"></i>
+                </div>
+                <h3>Dados Básicos</h3>
+                <div class="info">
+                    <p><i class="fas fa-flask"></i> <strong>pH do Solo:</strong> <span id="ph-value">6.5</span></p>
+                    <p><i class="fas fa-tint"></i> <strong>Umidade:</strong> <span id="moisture-value">45%</span></p>
+                    <p><i class="fas fa-thermometer-half"></i> <strong>Temperatura:</strong> <span id="temperature-value">25°C</span></p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>Nutrientes</h3>
+                <div class="info">
+                    <p><i class="fas fa-atom"></i> <strong>Nitrogênio (N):</strong> <span id="nitrogen-value">40 mg/kg</span></p>
+                    <p><i class="fas fa-fire"></i> <strong>Fósforo (P):</strong> <span id="phosphorus-value">35 mg/kg</span></p>
+                    <p><i class="fas fa-bolt"></i> <strong>Potássio (K):</strong> <span id="potassium-value">180 mg/kg</span></p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Status e Recomendações</h3>
+                <div class="info">
+                    <p><i class="fas fa-check-circle"></i> <strong>Status Geral:</strong> <span id="status-value">Bom</span></p>
+                    <p><i class="fas fa-list-check"></i> <strong>Recomendações:</strong></p>
+                    <ul>
+                        <li><i class="fas fa-tint"></i> Manter irrigação diária</li>
+                        <li><i class="fas fa-chart-line"></i> Monitorar pH semanalmente</li>
+                        <li><i class="fas fa-seedling"></i> Adubar sempre que necessário</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="download-btn"><i class="fas fa-download"></i> Baixar Relatório</button>
+                <button id="share-btn"><i class="fas fa-share-alt"></i> Compartilhar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

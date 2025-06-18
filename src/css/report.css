@@ -1,0 +1,263 @@
+* {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 25%, #81c784 50%, #c8e6c9 75%, #e8f5e9 100%);
+}
+
+h1 {
+    color: #1b4332; 
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0 4px 30px rgba(27, 67, 50, 0.3); 
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.report {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f1f8e9;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+img {
+    width: 60%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 30px rgba(27, 67, 50, 0.3); 
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+#share-btn {
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #1b4332;
+    height: 60px;
+    width: 160px;
+    color: #1b4332;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#download-btn {
+    border: none;
+    border-radius: 8px;
+    background-color: #1b4332;
+    height: 60px;
+    width: 160px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.3);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.card {
+    text-align: center;
+    background-color: #e8f5e9;
+    color: #1b4332;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.15);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #c8e6c9;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+h2 {
+    color: #1b4332;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    color: #2d6a4f;
+}
+
+.cards {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+@media (max-height: 768px) {
+    .container {
+        height: 300px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #download-btn, #share-btn {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #download-btn, #share-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .img {
+        padding: 10px;
+    }
+
+    img {
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .info ul li {
+        font-size: 13px;
+    }
+}

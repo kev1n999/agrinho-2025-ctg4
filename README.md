@@ -38,6 +38,10 @@ Acesse a página **[aqui](https://kev1n999.github.io/agrinho-2025-ctg4/)**
 
 ### Os recursos são meramente ilustrativos, e não possuem funcionalidade ou operação real na página, já que a [**Subcategoria 4 do Agrinho de 2025(Programação)**](https://www.sistemafaep.org.br/wp-content/uploads/2025/04/12.-Rede-Publica-de-Ensino-Categoria-Programacao_.pdf) é baseada apenas em HTML e CSS.
 
+# Fontes das imagens utilizadas:
+* https://elysios.com.br/
+* https://www.istockphoto.com/
+  
 # Agrinho 2025
 
 <img src="https://www.sistemafaep.org.br/wp-content/uploads/2021/07/agrinho_500x1280-2.jpg">
